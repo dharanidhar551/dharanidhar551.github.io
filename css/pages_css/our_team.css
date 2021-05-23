@@ -1,0 +1,184 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  nav{
+    width: 100%;height: 13vh;
+    background: rgba(0, 0, 0, 0.815);
+    color: white;display: flex;justify-content: space-between;
+    align-items: center;text-transform: uppercase;
+  }
+  nav .logo{
+    width: 25%;text-align:center;
+  }
+  nav .logo a{
+    text-decoration: none;
+    color: white;
+  }
+  nav .menu{
+    width: 40%;
+    display: flex;justify-content: space-around;
+  }
+  
+  nav .menu a{
+    width: 25%;
+    text-decoration: none;color: white;
+    font-weight: bold;
+  }
+  
+  nav .menu a::first-line{
+    color: #d1972a
+  }
+  
+  body{
+    background:rgba(15, 15, 15, 0.856);
+  }
+  .boxes{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+  }
+  .card:hover{
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+  }
+  .card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
+  .card:hover .imgbox{
+    transform: rotateY(-135deg);
+  }
+  .card .imgbox .img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card .details{
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .card .details p{
+    text-decoration: solid;
+  }
+  .boxes .card .imgbox img{
+    width: 297px;
+    height: 398px;
+  }
+  footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+  }
+  
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    transform: color .4s ease;
+  }
+  .socials a:hover i{
+    color: aqua;
+  }
+  
+  .footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom p{
+    font-size: 25px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .7;
+    font-weight: 200;
+  }
+  .gotop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align:center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+  .gotop i{
+    color: white;
+  }
+  .our_team_heading{
+    position: absolute;
+    top:25%;
+    left:3%;
+    color: #fff;
+    size: 2vh;
+  }

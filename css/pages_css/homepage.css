@@ -1,0 +1,164 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+nav{
+  width: 100%;height: 13vh;
+  background: rgba(0, 0, 0, 0.815);
+  color: white;display: flex;justify-content: space-between;
+  align-items: center;text-transform: uppercase;
+}
+nav .logo{
+  width: 25%;text-align:center;
+}
+nav .logo a{
+  text-decoration: none;
+  color: white;
+}
+nav .menu{
+  width: 40%;
+  display: flex;justify-content: space-around;
+}
+
+nav .menu a{
+  width: 25%;
+  text-decoration: none;color: white;
+  font-weight: bold;
+}
+
+nav .menu a::first-line{
+  color: #d1972a
+}
+
+body{
+  background:rgba(15, 15, 15, 0.856);
+}
+.imageslide{
+  width: 70%;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform:translate(-50%,50%);
+  background-image: url(../../images/home_images/home_img_1.jpg);
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px 5px white;
+  animation:slider 9s infinite linear;
+}
+
+@keyframes slider{
+  0%{ background-image: url(../../images/home_images/home_img_2.jpg); }
+  35%{ background-image: url(../../images/home_images/home_img_3.jpg); }
+
+  75%{ background-image: url(../../images/home_images/home_img_4.jpg); }
+}
+
+.type_container{
+  height: 220vh;
+  width: 75%;
+  display: flex;
+  justify-content: left;
+  align-items:center;
+}
+
+.type_container p{
+  text-align: justify;
+  overflow: hidden;
+  text-size-adjust: initial;
+  white-space:nowrap;
+  animation: text 30s;
+  border-right: 3px rgba(15, 15, 15, 0.856);
+  font-size: 200%;
+  padding-left: 5%;
+  color: white;
+}
+
+@keyframes text{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 150ch;
+  }
+}
+
+.change_content:after{
+  content:"";
+  animation :changetext 8s infinite linear;
+  color: #aaeb13;
+}
+@keyframes changetext{
+  0%,100%{content: " Kerala";}
+  25%{content: " Delhi";}
+  50%{content: " Goa";}
+  75%{content: " Jammu and Kashmir";}
+}
+footer{
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transform: color .4s ease;
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 25px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .7;
+  font-weight: 200;
+}
+
