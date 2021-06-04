@@ -55,7 +55,7 @@
     box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
   }
   .card:hover{
-    transform: perspective(2000px) rotate(-10deg);
+    transform: perspective(2000px) rotate(0deg);
     box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
   }
   .card .imgbox{
@@ -68,7 +68,7 @@
     transition: 1s;
   }
   .card:hover .imgbox{
-    transform: rotateY(-135deg);
+    transform: rotateY(-140deg);
   }
   .card .imgbox .img{
     position: absolute;
