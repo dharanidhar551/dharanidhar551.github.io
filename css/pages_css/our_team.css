@@ -184,4 +184,7 @@
   }
   .boxes p{
     text-align: justify;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
   }
